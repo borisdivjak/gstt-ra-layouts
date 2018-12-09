@@ -1,0 +1,19 @@
+/* Pre-existing CSS on the GSTT RA app, before Boris's changes to the layout */
+
+.starter-template {
+    padding: 6rem 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: white;
+}
+
+
+.table th.actions, .table td.actions {
+    white-space: nowrap;
+    width: 1px;
+}
+
+.octicon {
+    fill: currentColor;
+}
