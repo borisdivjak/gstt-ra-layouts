@@ -9,7 +9,7 @@ $primary:       $color_nhsuk-blue !default;
 $secondary:     $color_nhsuk-grey-3 !default;
 $success:       $color_nhsuk-green !default;
 $info:          $color_nhsuk-blue !default;
-$warning:       $color_nhsuk-yellow !default;
+$warning:       $color_nhsuk-warm-yellow !default;
 $danger:        $color_nhsuk-red !default;
 $light:         $color_nhsuk-grey-5 !default;
 $dark:          $color_nhsuk-grey-1 !default;
@@ -32,6 +32,55 @@ $nav-link-padding-x:  1.25em;  // padding left and right within the tabs
 
 $table-bg:                    white !default;
 $table-accent-bg:             white !default; // this disables .table-striped in case it is used
+
+
+
+// Buttons + Forms
+
+$input-btn-padding-y:         .5rem !default;
+$input-btn-padding-y-sm:      .25rem !default;
+$input-btn-padding-y-lg:      .5rem !default;
+
+$input-btn-focus-width:       .2rem !default;
+$input-btn-border-width:      1px !default;
+$input-box-shadow:            none !default;
+
+$input-color:                 $color_nhsuk-black !default;
+$input-border-color:          $color_nhsuk-grey-2 !default;
+
+$input-border-radius:                   0 !default;
+$input-border-radius-lg:                0 !default;
+$input-border-radius-sm:                0 !default;
+
+$input-focus-border-color:              $nhsuk-focus-color !default;
+
+
+// Buttons
+
+$btn-padding-x:               1.25rem !default;
+$btn-padding-x-sm:            .75rem !default;
+$btn-padding-x-lg:            1.25rem !default;
+
+$btn-border-width:            0 !default;
+
+$btn-font-weight:             600 !default;
+$btn-box-shadow:              0 3px 0 $color_nhsuk-black;
+$btn-active-box-shadow:       $btn-box-shadow;
+
+
+// Alerts
+
+$alert-border-radius:               0 !default;
+$alert-border-width:                4px !default;
+
+$alert-bg-level:                    -12.5 !default;
+$alert-border-level:                1 !default;
+$alert-color-level:                 1 !default;
+
+
+
+$enable-shadows:     true; // enable shadows for bootstrap components
+$enable-transitions: false; 
 
 
 
@@ -82,6 +131,19 @@ $table-accent-bg:             white !default; // this disables .table-striped in
   border: 0;  
 }
 
+/* buttons and forms */
+.btn {
+  &:focus {
+    box-shadow: 0 0 0 $input-btn-focus-width $nhsuk-focus-color;
+  }
+}
+
+.form-control {
+  &:focus {
+    border: $input-btn-border-width solid $input-border-color;
+    box-shadow: 0 0 0 $input-btn-focus-width $nhsuk-focus-color;
+  }  
+}
 
 
 @import "gstt-legacy";
