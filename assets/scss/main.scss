@@ -1,9 +1,10 @@
 @import "nhs_colours";
+@import url('https://fonts.googleapis.com/css?family=Hind+Siliguri:400,600&subset=latin-ext');
 
 
 /* change some Bootstrap vars to make fonts / colours etc look more like NHS */
 
-$font-family-base: "Hind", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-base: "Hind Siliguri", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 $primary:       $color_nhsuk-blue !default;
 $secondary:     $color_nhsuk-grey-3 !default;
