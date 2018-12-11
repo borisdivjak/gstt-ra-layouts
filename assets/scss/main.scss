@@ -11,7 +11,7 @@ $success:       $color_nhsuk-green !default;
 $info:          $color_nhsuk-blue !default;
 $warning:       $color_nhsuk-warm-yellow !default;
 $danger:        $color_nhsuk-red !default;
-$light:         $color_nhsuk-grey-5 !default;
+$light:         rgba($color_nhsuk-grey-2, 0.1) !default;
 $dark:          $color_nhsuk-grey-1 !default;
 
 
@@ -48,11 +48,14 @@ $input-box-shadow:            none !default;
 $input-color:                 $color_nhsuk-black !default;
 $input-border-color:          $color_nhsuk-grey-2 !default;
 
-$input-border-radius:                   0 !default;
-$input-border-radius-lg:                0 !default;
-$input-border-radius-sm:                0 !default;
-
+$input-btn-focus-color:                 $nhsuk-focus-color !default;
 $input-focus-border-color:              $nhsuk-focus-color !default;
+
+$custom-control-indicator-bg:           white !default;
+$custom-control-indicator-box-shadow:   none !default;
+$custom-control-indicator-size:         1.25rem !default;
+$custom-control-gutter:                 1.6rem !default;
+$custom-control-spacer-x:               1rem !default;
 
 
 // Buttons
@@ -131,6 +134,13 @@ $enable-transitions: false;
   border: 0;  
 }
 
+.card.bg-light {
+  .card-header {
+    background: none;
+//    border-bottom: 1px solid $color_nhsuk-grey-3;
+  }
+}
+
 /* buttons and forms */
 .btn {
   &:focus {
@@ -145,6 +155,23 @@ $enable-transitions: false;
   }  
 }
 
+.custom-control-label::before {
+  border: $input-btn-border-width solid $input-border-color;
+}
+
+// remove spinner / stepper on number inputs
+input[type=number], input[type=date] {
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+}
+
+// align text to the right in horizontal form layouts
+@media (min-width: map-get($grid-breakpoints, md)) {
+  .form-group.form-row > .col-form-label {
+    text-align: right;
+  }
+}
 
 @import "gstt-legacy";
 
