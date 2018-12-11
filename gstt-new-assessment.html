@@ -11,6 +11,7 @@
 
 <link rel="stylesheet" media="all" href="./assets/css/main.css" data-turbolinks-track="reload">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/js/gstt-new-assessment.js"></script>
 
 </head>
   <body>
@@ -95,41 +96,39 @@
         <div class="col-md-4 col-6">
           <div class="form-group form-row">
             <label class="col-md-6 col-form-label">Tender joints:</label>
-            <div class="col-md-4 col-8"><input class="form-control" type="number" value=""></div>
+            <div class="col-md-4 col-8"><input id="das28-tender" class="form-control das28-required-input" type="number" value=""></div>
           </div>
         
           <div class="form-group form-row">
             <label class="col-md-6 col-form-label ">Swollen joints:</label>
-            <div class="col-md-4 col-8"><input class="form-control" type="number" value=""></div>
+            <div class="col-md-4 col-8"><input id="das28-swollen" class="form-control das28-required-input" type="number" value=""></div>
           </div>
         </div>
 
         <div class="col-md-4 col-6  ">
           <div class="form-group form-row">
             <label class="col-md-4 col-form-label ">CRP:</label>
-            <div class="col-md-4 col-8"><input class="form-control" type="number" value=""></div>
+            <div class="col-md-4 col-8"><input id="das28-crp" class="form-control das28-required-input" type="number" value=""></div>
             <div class="col-md-2 col-4 form-inline">mg/l</div>
           </div>
         
           <div class="form-group form-row">
             <label class="col-md-4 col-form-label ">VAS:</label>
-            <div class="col-md-4 col-8"><input class="form-control" type="number" value=""></div>
+            <div class="col-md-4 col-8"><input id="das28-vas" class="form-control das28-required-input" type="number" value=""></div>
           </div>
         </div>
 
         <div class="col-md-4">
-<!--
-          <div class="card">
-            <div class="card-body text-center">
-              <p class="mb-0">DAS28 score:</p>
-              <p class="h2 mb-0">4.53</p>
+
+            <div id="das28-alert-incomplete" class="alert alert-secondary text-center pt-3">
+              <p class="mb-2 mt-2">Fill in all required fields to calculate DAS28 score</p>
             </div>
-          </div>
--->
-            <div class="alert alert-primary text-center pt-3">
+
+            <div id="das28-alert-score" class="alert alert-primary text-center pt-3 d-none">
               <p class="mb-0">DAS28 score:</p>
-              <p class="h2 mb-0">4.53</p>
+              <input id="das28-score" class="h2 bg-transparent border-0 text-center mb-0 w-100" type="number" value="" disabled>
             </div>
+
         </div>
 
       </div>
