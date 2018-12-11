@@ -34,4 +34,13 @@ $(function() {
     }
 
   });
+
+  // this is a long form, so it might be better to suppress implicit submission on pressing return
+  $('input, select').on('keypress', function(e) {
+    if(e.keyCode == 13 && e.target.type !== 'submit') {
+      e.preventDefault();
+      $(e.target).change();
+      return false;
+    }
+  });
 });
