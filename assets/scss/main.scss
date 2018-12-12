@@ -135,10 +135,22 @@ $enable-transitions: false;
   border: 0;  
 }
 
+.card .card-header {
+  padding-top: $card-spacer-y*1.25;
+}
+
 .card.bg-light {
   .card-header {
     background: none;
-//    border-bottom: 1px solid $color_nhsuk-grey-3;
+//      border-bottom: 2px solid $color_nhsuk-grey-5;
+
+    &:after {
+      display: block;
+      content: "";
+      padding-top: $card-spacer-y/2;
+      margin-bottom: -$card-spacer-y;
+      border-bottom: 1px solid rgba(white, 0.8);
+    }
   }
 }
 
