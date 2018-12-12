@@ -68,27 +68,27 @@
     <ul class="nav nav-tabs card-header-tabs">
 
         <li class="nav-item">
-          <a class="nav-link active" href="gstt-patient.html">Details</a>
+          <a class="nav-link" href="gstt-patient.html">Details</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="gstt-conditions.html">Conditions</a>
+          <a class="nav-link active" href="gstt-conditions.html">Conditions</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="gstt-medicines.html">Medicines</a>
+          <a class="nav-link " href="gstt-medicines.html">Medicines</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="gstt-assessments.html">Assessments</a>
+          <a class="nav-link " href="gstt-assessments.html">Assessments</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="gstt-proms.html">PROMs</a>
+          <a class="nav-link " href="gstt-proms.html">PROMs</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#">Messages</a>
+          <a class="nav-link " href="#">Messages</a>
         </li>
 
 
@@ -96,34 +96,54 @@
   </div>
 
   <div class="card-body">
-    <h2 class="h5 card-title float-left">Details</h2>
+    <h2 class="h5 card-title float-left">Conditions</h2>
     <div class="float-right clearfix">
       <a class="btn btn-primary btn-sm" href="#">
-        <svg class="octicon octicon-pencil" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"></path></svg>
-        Edit
+        New condition
       </a>  
     </div>
 
-    
     <div class="card-text">
-        <table class="table table-bordered table-striped attributes-table">
-    <tbody>
-      <tr>
-        <th>First name</th>
-        <td>Boris</td>
-      </tr>
 
-      <tr>
-        <th>Last name</th>
-        <td>Divjak</td>
-      </tr>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Condition</th>
+            <th scope="col">Type</th>
+            <th scope="col">Start</th>
+            <th scope="col">End</th>
+          </tr>
+        </thead>
+      
+        <tbody>
+            <tr>
+              <td>Seropositive Rheumatoid Arthritis</td>
+              <td>Primary</td>
+              <td>02/11/2015</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Type 1 Diabetes</td>
+              <td>Comorbidity</td>
+              <td>23/03/2014</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Left Hip Replacement</td>
+              <td>Procedure</td>
+              <td>29/07/2016</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Undifferentiated Inflammatory Arthritis</td>
+              <td>Primary</td>
+              <td>01/11/2015</td>
+              <td>06/03/2016</td>
+            </tr>
+        </tbody>
+      </table>
 
-      <tr>
-        <th>Mobile number</th>
-        <td>07123 456789</td>
-      </tr>
-    </tbody>
-  </table>
+
 
     </div>
   </div>
