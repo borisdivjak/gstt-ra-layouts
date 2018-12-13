@@ -6914,4 +6914,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=date]::-webkit-inner-s
   #patient-details-iframe body {
     background-color: red !important; }
 
+#prom-chart svg {
+  background: rgba(240, 244, 245, 0.5); }
+
 /*# sourceMappingURL=main.css.map */
