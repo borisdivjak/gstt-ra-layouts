@@ -24,5 +24,5 @@ $(function() {
   });
 
   var iframeWindow = $("#patient-details-iframe").get(0).contentWindow;
-  if (iframeWindow) $(iframWindow).on("focus", function() { extendIframe(); })
+  if (iframeWindow) $(iframeWindow).on("focus", function() { extendIframe(); })
 });
