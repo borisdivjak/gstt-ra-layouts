@@ -23,6 +23,6 @@ $(function() {
     }
   });
 
-  var iframeWindow = $(“#patient-details-iframe”).get(0).contentWindow;
-  if (iframeWindow) $(iframWindow).on(“focus”, function() { extendIframe(); })
+  var iframeWindow = $("#patient-details-iframe").get(0).contentWindow;
+  if (iframeWindow) $(iframWindow).on("focus", function() { extendIframe(); })
 });
