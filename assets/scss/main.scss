@@ -224,7 +224,8 @@ input[type=number], input[type=date] {
 }
 
 .patient-details-body {
-    overflow: hidden;
+  overflow: hidden;
+  background: $color_nhsuk-grey-5;
 }
 
 #patient-details-iframe {
