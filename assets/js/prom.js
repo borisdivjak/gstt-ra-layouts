@@ -1,17 +1,31 @@
 $(function() { 
+    var touchedbutton = false;
+
     $("form").submit(function() { 
         return false;
     });
 
-    $(".prom-scale button").on("touchstart", function(e) {
+    $(document).on("touchstart mousedown", function(e) {
+      touchedbutton = $(e.target).hasClass('btn');
+      alert($(e.target).html());
+    });
+
+    $(".prom-scale button").on("touchstart mousedown", function(e) {
+        e.preventDefault();
         $(this).addClass("popout");
     });
 
-    $(".prom-scale button").on("touchend touchcancel mouseout", function(e) {
+    $(".prom-scale button").on("touchend touchcancel mouseup mouseout", function(e) {
+        e.preventDefault();
         $(this).removeClass("popout");
     });
 
     $(".prom-scale button").on("click", function() {
-      $(this).addClass("active");
+      if (touchedbutton) {
+        $(this).addClass("active");
+      }
+      else {
+        e.preventDefault();
+      }
     });
 });
