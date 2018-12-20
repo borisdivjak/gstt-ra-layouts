@@ -6926,7 +6926,7 @@ a.text-dark:hover, a.text-dark:focus {
     background: #005eb8 !important;
     color: white;
     transition: all 0s; }
-  @media screen and (max-height: 560px) {
+  @media screen and (max-height: 550px) {
     .prom-scale button {
       height: 2.25rem; } }
   @media screen and (max-height: 500px) {

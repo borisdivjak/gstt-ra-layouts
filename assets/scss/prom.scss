@@ -44,10 +44,9 @@
       transition: all 0s;
     }
     
-    @media screen and (max-height: 560px) { height: 2.25rem; }
+    @media screen and (max-height: 550px) { height: 2.25rem; }
     @media screen and (max-height: 500px) { height: 2rem; }
     @media screen and (max-height: 450px) { height: 1.75rem; }
-
   }
 }
 
