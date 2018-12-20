@@ -18,6 +18,8 @@
     float: right;
     height: 2rem;
     transition: width .5s, background .5s, color .5s;
+    margin: 0;
+    border: 20px solid black;
     -webkit-touch-callout: none;
     -webkit-user-select: none;    
     -moz-user-select: none;
