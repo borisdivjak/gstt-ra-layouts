@@ -6926,6 +6926,15 @@ a.text-dark:hover, a.text-dark:focus {
     background: #005eb8 !important;
     color: white;
     transition: all 0s; }
+  @media screen and (max-height: 560px) {
+    .prom-scale button {
+      height: 2.25rem; } }
+  @media screen and (max-height: 500px) {
+    .prom-scale button {
+      height: 2rem; } }
+  @media screen and (max-height: 450px) {
+    .prom-scale button {
+      height: 1.75rem; } }
 
 .prom-html {
   padding-top: 50px;
