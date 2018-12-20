@@ -18,6 +18,11 @@
     float: right;
     height: 2rem;
     transition: width .5s, background .5s, color .5s;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;    
+    -moz-user-select: none;
+    -ms-user-select:none; 
+    user-select:none;
     
     &.active {
       background: $color_nhsuk-blue !important;
@@ -26,7 +31,7 @@
     }
     
     &.popout {
-      width: 4.5rem;
+      width: 5rem;
       text-align: left;
       font-size: 1.5em;
       font-weight: bold;

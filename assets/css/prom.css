@@ -6903,13 +6903,18 @@ a.text-dark:hover, a.text-dark:focus {
   width: 2rem;
   float: right;
   height: 2rem;
-  transition: width .5s, background .5s, color .5s; }
+  transition: width .5s, background .5s, color .5s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
   .prom-scale button.active {
     background: #005eb8 !important;
     color: white;
     font-weight: bold; }
   .prom-scale button.popout {
-    width: 4.5rem;
+    width: 5rem;
     text-align: left;
     font-size: 1.5em;
     font-weight: bold;
