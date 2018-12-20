@@ -4,7 +4,7 @@ $(function() {
     });
 
     $(".prom-scale button").on("touchstart touchend", function(e) {
-        e.preventDefault();
+//        e.preventDefault();
         $(this).toggleClass("popout");
     });
 
