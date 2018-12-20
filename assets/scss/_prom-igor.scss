@@ -1,0 +1,112 @@
+.prom-html{
+    padding-bottom:50px;
+    padding-top:40px
+}
+.prom-html>body>footer{
+    height:50px
+}
+.prom-html>body>header{
+    height:40px
+}
+.prom-html .progress{
+    height:3px
+}
+.prom-scale{
+    position:relative;
+    float:right;
+    padding-right:3.25rem
+}
+.prom-scale>ul>li{
+    display:block;
+    margin:.25ex
+}
+.prom-scale>ul>li:nth-child(1)>button{
+    background:#6aa84f
+}
+.prom-scale>ul>li:nth-child(2)>button{
+    background:#85b770
+}
+.prom-scale>ul>li:nth-child(3)>button{
+    background:#a1c691
+}
+.prom-scale>ul>li:nth-child(4)>button{
+    background:#bcd5b1
+}
+.prom-scale>ul>li:nth-child(5)>button{
+    background:#d8e4d2
+}
+.prom-scale>ul>li:nth-child(6)>button{
+    background:#f3f3f3
+}
+.prom-scale>ul>li:nth-child(7)>button{
+    background:#f3f3f3
+}
+.prom-scale>ul>li:nth-child(8)>button{
+    background:#edcdcd
+}
+.prom-scale>ul>li:nth-child(9)>button{
+    background:#e7a7a7
+}
+.prom-scale>ul>li:nth-child(10)>button{
+    background:#e28080
+}
+.prom-scale>ul>li:nth-child(11)>button{
+    background:#dc5a5a
+}
+.prom-scale>ul>li>button.active{
+    background:yellow
+}
+.prom-scale-hint-good,.prom-scale-hint-bad{
+    position:absolute;
+    right:0;
+    width:3rem;
+    font-size:75%
+}
+.prom-scale-hint-good{
+    top:0
+}
+.prom-scale-hint-bad{
+    bottom:0
+}
+.bg-nhs-blue{
+    background:#005eb8
+}
+.text-nhs-blue{
+    color:#005eb8
+}
+.starter-template{
+    padding:6rem 1.5rem
+}
+.octicon{
+    fill:currentColor
+}
+.table th.actions,.table td.actions{
+    white-space:nowrap;
+    width:1px
+}
+.proms-table th{
+    font-size:small;
+    width:8%;
+    padding:6px
+}
+.proms-table th.name{
+    width:10%
+}
+.proms-table th.actions{
+    width:4%
+}
+.proms-table th.text{
+    width:22%
+}
+.attributes-table th{
+    width:33.33%
+}
+.pre-wrap{
+    white-space:pre-wrap
+}
+.message-count__unread-0{
+    color:lightgrey
+}
+.messages-table__unread{
+    font-weight:bold
+}
