@@ -6,8 +6,8 @@ $(function() {
     });
 
     $(document).on("touchstart mousedown", function(e) {
-      touchedbutton = $(e.target).hasClass('btn');
-      alert($(e.target).html());
+//      touchedbutton = $(e.target).hasClass('btn');
+      touchedbutton = $(e.target).html();
     });
 
     $(".prom-scale button").on("touchstart mousedown", function(e) {
@@ -22,6 +22,7 @@ $(function() {
 
     $(".prom-scale button").on("click", function() {
 //      if (touchedbutton) {
+        alert(touchedbutton);
         $(this).addClass("active");
  //     }
  //     else {
