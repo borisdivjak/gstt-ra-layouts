@@ -6,21 +6,22 @@ $(function() {
     });
 
     $(document).on("touchstart mousedown", function(e) {
-//      touchedbutton = $(e.target).hasClass('btn');
-      touchedbutton = $(e.target).html();
+      if ($(e.target, ".prom-scale").hasClass('btn')) $(e.target).addClass("popout");
     });
 
-    $(".prom-scale button").on("touchstart mousedown", function(e) {
-        $(this).addClass("popout");
+    $(document).on("touchend touchcancel mouseup mouseout", function(e) {
+      if ($(e.target, ".prom-scale").hasClass('btn')) $(e.target).removeClass("popout");
+    });
+
+/*    $(".prom-scale button").on("touchstart mousedown", function(e) {
     });
 
     $(".prom-scale button").on("touchend touchcancel mouseup mouseout", function(e) {
-        $(this).removeClass("popout");
     });
-
+*/
     $(".prom-scale button").on("click", function() {
 //      if (touchedbutton) {
-        alert(touchedbutton);
+//        alert(touchedbutton);
         $(this).addClass("active");
  //     }
  //     else {
