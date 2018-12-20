@@ -21,11 +21,11 @@ $(function() {
     });
 
     $(".prom-scale button").on("click", function() {
-      if (touchedbutton) {
+//      if (touchedbutton) {
         $(this).addClass("active");
-      }
-      else {
-        e.preventDefault();
-      }
+ //     }
+ //     else {
+//        e.preventDefault();
+//      }
     });
 });
