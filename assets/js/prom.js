@@ -11,12 +11,10 @@ $(function() {
     });
 
     $(".prom-scale button").on("touchstart mousedown", function(e) {
-        e.preventDefault();
         $(this).addClass("popout");
     });
 
     $(".prom-scale button").on("touchend touchcancel mouseup mouseout", function(e) {
-        e.preventDefault();
         $(this).removeClass("popout");
     });
 
