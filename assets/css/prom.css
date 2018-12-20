@@ -6892,4 +6892,30 @@ a.text-dark:hover, a.text-dark:focus {
 .messages-table__unread {
   font-weight: bold; }
 
+.prom-scale ul {
+  padding-left: 1rem;
+  width: 4rem; }
+  .prom-scale ul li::after {
+    display: block;
+    clear: both;
+    content: ""; }
+.prom-scale button {
+  width: 2rem;
+  float: right;
+  height: 2rem;
+  transition: width .5s, background .5s, color .5s; }
+  .prom-scale button.active {
+    background: #005eb8 !important;
+    color: white;
+    font-weight: bold; }
+  .prom-scale button:active {
+    width: 4.5rem;
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 0;
+    background: #005eb8 !important;
+    color: white;
+    transition: all 0s; }
+
 /*# sourceMappingURL=prom.css.map */
