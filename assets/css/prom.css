@@ -6895,26 +6895,30 @@ a.text-dark:hover, a.text-dark:focus {
 .prom-scale ul {
   padding-left: 1rem;
   width: 4rem; }
-  .prom-scale ul li::after {
-    display: block;
-    clear: both;
-    content: ""; }
+  .prom-scale ul li {
+    margin: 0; }
+    .prom-scale ul li::after {
+      display: block;
+      clear: both;
+      content: ""; }
 .prom-scale button {
-  width: 2rem;
+  width: 2.6rem;
   float: right;
-  height: 2rem;
+  height: 2.6rem;
   transition: width .5s, background .5s, color .5s;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; }
+  user-select: none;
+  border: 0.05rem solid white;
+  border-radius: 0.3rem; }
   .prom-scale button.active {
     background: #005eb8 !important;
     color: white;
     font-weight: bold; }
   .prom-scale button.popout {
-    width: 5.5rem;
+    width: 6rem;
     text-align: left;
     font-size: 1.5em;
     font-weight: bold;
@@ -6922,5 +6926,24 @@ a.text-dark:hover, a.text-dark:focus {
     background: #005eb8 !important;
     color: white;
     transition: all 0s; }
+
+.prom-html {
+  padding-top: 50px;
+  padding-bottom: 0; }
+
+.prom-html footer {
+  right: 150px !important; }
+
+.prom-html > body > header {
+  height: 53px; }
+  .prom-html > body > header .ra-header-title {
+    float: left;
+    width: 60%;
+    font-size: 0.95em;
+    line-height: 1.25em; }
+  .prom-html > body > header .gstt-nhs-logo {
+    float: right; }
+    .prom-html > body > header .gstt-nhs-logo img {
+      height: 35px; }
 
 /*# sourceMappingURL=prom.css.map */
