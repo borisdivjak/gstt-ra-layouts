@@ -186,6 +186,22 @@ input[type=number], input[type=date] {
   }
 }
 
+.input-group .btn {
+  box-shadow: none;
+  
+  &:active {
+    box-shadow: none !important;
+  }
+}
+
+
+
+
+
+
+
+
+
 @import "gstt-legacy";
 
 

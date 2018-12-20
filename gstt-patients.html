@@ -10,6 +10,8 @@
 <meta name="csrf-token" content="2BJ9GjNCpp0Xxdxx9LflFUf+BcD6hDQegHIVWnWh8agRRkbitKr2nHfJBS3sgnPGzAnis3qkRg8AguAhD+irRg==">
 
 <link rel="stylesheet" media="all" href="./assets/css/main.css" data-turbolinks-track="reload">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/js/gstt-filter-patient-list.js"></script>
 
 </head>
 
@@ -53,16 +55,22 @@
 
         
 
-  <h1 class="pb-2 mb-4">Patients
+  <h1 class="pb-2 float-left">Patients</h1>
+  
+  <div class="float-right">
+    <a class="btn btn-success btn-sm" role="button" href="#">
+      <svg class="octicon octicon-plus" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"></path></svg>
+      Patient
+    </a>
+  </div>
 
-    <div class="float-right">
-      <a class="btn btn-success btn-sm" role="button" href="#">
-        <svg class="octicon octicon-plus" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"></path></svg>
-        Patient
-      </a>
+  <form action="">
+    <div class="form-group mb-3">
+      <input id="patient-list-filter" class="form-control form-control-lg" type="text" placeholder="Search by patient name, NHS number or hospital number">
     </div>
-  </h1>
-<table class="table table-bordered table-striped">
+  </form>
+  
+<table id="patient-list" class="table table-bordered table-striped">
   <thead>
     <tr>
       <th scope="col">First name</th>

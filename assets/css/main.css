@@ -6867,6 +6867,11 @@ input[type=number]::-webkit-inner-spin-button, input[type=date]::-webkit-inner-s
 @media (min-width: 768px) {
   .form-group.form-row > .col-form-label {
     text-align: right; } }
+.input-group .btn {
+  box-shadow: none; }
+  .input-group .btn:active {
+    box-shadow: none !important; }
+
 /* Pre-existing CSS on the GSTT RA app, before Boris's changes to the layout */
 .starter-template {
   padding: 6rem 1.5rem; }
