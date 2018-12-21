@@ -12,11 +12,12 @@
 <link rel="stylesheet" media="all" href="./assets/css/main.css" data-turbolinks-track="reload">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="assets/js/gstt-new-assessment.js"></script>
+<script src="assets/js/gstt-new-assessment-iframe-addon.js"></script>
 
 </head>
   <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
 
   <a class="navbar-brand" href="#">
     GSTT Remote Monitoring
@@ -45,11 +46,13 @@
 
   </div>
 </nav>
+<div style="padding-top: 2.5rem;">
 
+<div class="row">
+  <div class="col-xl-6 pr-xl-0">
 
-    <main role="main" class="container">
-      <div class="starter-template">
-
+    <main role="main" class="container-fluid">
+      
         
 
         
@@ -251,7 +254,7 @@
 
     </div>
   </div>
--->
+-->  
 
   <div class="form-group">
 <!--    <input type="submit" name="commit" value="Complete assessment" class="btn btn-success"> -->
@@ -259,11 +262,26 @@
   </div>
 </form>
 
-<!--<a class="btn btn-secondary" href="#">Back</a>-->
+<br />
+<br />
+<br />
 
 
-      </div>
     </main>
-  
+    
+  </div>
+  <div class="col-xl-6 pl-xl-0">
+    
+    
+    <div id="patient-details-section-v3" class="collapsed">
+      <div class="patient-details-body">
+        <iframe id="patient-details-iframe" scrolling="no" src="gstt-conditions.html">
+        </iframe>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  </div>
 
 </body></html>

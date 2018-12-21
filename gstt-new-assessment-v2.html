@@ -48,26 +48,36 @@
 </nav>
 
 
-    <main role="main" class="container">
       <div style="padding-top: 2.5rem;">
+    <main role="main" class="container-fluid">
 
         
 
         
 
-<h1 class="pb-2 mb-4">
-  New assessment <span class="small"> for Boris Divjak </span>
-</h1>
+<header class="clearfix">        
+<div class="float-left">
+  <h1 class="pb-2 mb-0">
+    Boris Divjak
+  </h1>
+  <p class="text-muted">
+  <span class="text-secondary">D.O.B.:</span>       23/05/1978    &nbsp;&nbsp;&nbsp; 
+  <span class="text-secondary">NHS no.:</span>      943 476 5919  &nbsp;&nbsp;&nbsp; 
+  <span class="text-secondary">Hospital no.:</span> 5779021Q
+  </p>
+</div>
+<a class="btn btn-success btn-lg float-right mt-2" href="gstt-consultations.html">End consultation</a>
+</header>
 
 <form action="" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓">
   
-  <div class="card bg-dark text-white mb-3">
-    <div class="card-body">
+  <div class="card bg-light mb-0">
+    <div class="card-body pb-0">
       <div class="row">  
 
         <div class="col-sm-6">
           <div class="form-group form-row mb-0">
-            <label class="col-md-3 col-form-label">Date:</label>
+            <label class="col-md-4 col-form-label">Date:</label>
             <div class="col-md-6"><input class="form-control" type="date" value="2018-12-11" required></div>
           </div>
         </div>
@@ -81,6 +91,30 @@
 
       </div>
       
+    </div>
+  </div>
+
+  <div class="card bg-light mb-3">
+    <div class="card-body">
+      <div class="form-group form-row">
+        <label class="col-md-2 col-form-label ">Notes:</label>
+        <div class="col-md-10"><textarea class="form-control" rows="6"></textarea></div>
+      </div>
+
+
+      <div class="form-group form-row">
+        <label class="col-md-2 col-form-label ">Outcome:</label>
+        <div class="col-md-6">
+          <select class="form-control">
+            <option selected>Select outcome ...</option>
+            <option>Watchful Waiting / Surveillance</option>
+            <option>Return for Review</option>
+            <option>Discharge to GP</option>
+          </select>
+        </div>
+      </div>
+
+
     </div>
   </div>
 
@@ -132,50 +166,6 @@
         </div>
 
       </div>
-
-    </div>
-  </div>
-
-  <div class="card bg-light mb-3">
-    <div class="card-header">
-     <h5>Appointment details</h5>
-    </div>
-    
-    <div class="card-body">
-      <div class="form-group form-row">
-        <label class="col-md-2 col-form-label ">Notes:</label>
-        <div class="col-md-10"><textarea class="form-control" rows="6"></textarea></div>
-      </div>
-
-      <div class="form-group form-row">
-        <label class="col-md-2 col-form-label ">Injection:</label>
-        <div class="col-md-10">
-          <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" value="No">
-            <label class="custom-control-label" for="customRadioInline1">No</label>
-          </div>
-          <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" value="Yes">
-            <label class="custom-control-label" for="customRadioInline2">Yes – add details:</label>
-          </div>
-          <div class="form-group custom-control-inline">
-            <input class="form-control" type="text" value="">
-          </div>
-        </div>
-      </div>
-
-      <div class="form-group form-row">
-        <label class="col-md-2 col-form-label ">Outcome:</label>
-        <div class="col-md-6">
-          <select class="form-control">
-            <option selected>Select outcome ...</option>
-            <option>Watchful Waiting / Surveillance</option>
-            <option>Return for Review</option>
-            <option>Discharge to GP</option>
-          </select>
-        </div>
-      </div>
-
 
     </div>
   </div>
@@ -254,12 +244,26 @@
   </div>
 -->  
 
-  <div class="form-group">
-<!--    <input type="submit" name="commit" value="Complete assessment" class="btn btn-success"> -->
-    <a href="gstt-assessments.html" class="btn btn-success">Complete assessment</a>
-  </div>
 </form>
 
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 <br />
 <br />
 <br />
@@ -270,8 +274,8 @@
 <!--<a class="btn btn-secondary" href="#">Back</a>-->
 
 
-      </div>
     </main>
+      </div>
     
     
     
@@ -280,7 +284,7 @@
         <svg height="32" class="octicon octicon-triangle-up" viewBox="0 0 12 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M12 11L6 5l-6 6h12z"></path></svg>
       </div>
       <div class="patient-details-body">
-        <iframe id="patient-details-iframe" scrolling="no" src="gstt-patient.html">
+        <iframe id="patient-details-iframe" scrolling="no" src="gstt-conditions.html">
         </iframe>
       </div>
     </div>
