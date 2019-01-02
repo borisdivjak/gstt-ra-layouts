@@ -1,9 +1,5 @@
-# gstt-ra-layouts
+These are HTML/CSS layouts for the Guy's and St Thomas' [Remote Monitoring app](gsttrm.net).
 
-[01 - Patients list](gstt-patients.html) 
+They're just static layouts, currently hosted on GitHub Pages. See the layouts here: https://unboxed.github.io/gstt-ra-layouts/.
 
-[02 - Patient details](gstt-patient.html)
-
-[03 - Add new patient](gstt-new-patient.html)
-
-[04 - New assessment form](gstt-new-assessment.html)
+I use [Harp](http://harpjs.com/) to preview the layouts locally.
