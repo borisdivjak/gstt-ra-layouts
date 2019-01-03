@@ -12,10 +12,6 @@
 <meta name="csrf-token" content="0LWUw3DvoLIY14h7XOHYEdBvD3e9jvjA9U6BCSYTGtsZ4a879wfws3jbUSdE1E7CW5joBD2uitF1vnRyXFpANQ==">
 
 <link rel="stylesheet" media="all" href="./assets/css/main.css" data-turbolinks-track="reload">
-<link rel="stylesheet" media="all" href="./assets/c3js-0.6.11/c3.min.css" data-turbolinks-track="reload">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="assets/c3js-0.6.11/d3-5.4.0.min.js"></script>
-<script src="assets/c3js-0.6.11/c3.min.js"></script>
 
 </head>
 
@@ -64,42 +60,30 @@
         
 
         
-<header class="clearfix">        
-<div class="float-left">
-  <h1 class="pb-2 mb-0">
-    Boris Divjak
-  </h1>
-  <p class="text-muted">
-  <span class="text-secondary">D.O.B.:</span>       23/05/1978    &nbsp;&nbsp;&nbsp; 
-  <span class="text-secondary">NHS no.:</span>      943 476 5919  &nbsp;&nbsp;&nbsp; 
-  <span class="text-secondary">Hospital no.:</span> 5779021Q
-  </p>
-</div>
-<a class="btn btn-primary btn-lg float-right mt-2" href="gstt-new-assessment-v2.html">Start consultation</a>
-</header>
+<%- partial("_patient-header") %>
 
 <div class="card">
   <div class="card-header">
     <ul class="nav nav-tabs card-header-tabs">
 
         <li class="nav-item">
-          <a class="nav-link" href="gstt-conditions.html">Conditions</a>
+          <a class="nav-link " href="gstt-patient-conditions.html">Conditions</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="gstt-medicines.html">Medicines</a>
+          <a class="nav-link active" href="gstt-patient-medicines.html">Medicines</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="gstt-consultations.html">Consultations</a>
+          <a class="nav-link " href="gstt-patient-consultations.html">Consultations</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active" href="gstt-proms.html">PROMs</a>
+          <a class="nav-link " href="gstt-patient-proms.html">PROMs</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#">Messages</a>
+          <a class="nav-link " href="#">Messages</a>
         </li>
 
 
@@ -107,77 +91,59 @@
   </div>
 
   <div class="card-body">
-    <h2 class="h5 card-title float-left">PROMs</h2>
+    <h2 class="h5 card-title float-left pb-3">Medicines</h2>
     <div class="float-right clearfix">
-      <a class="btn btn-primary btn-sm" href="#">
-        New PROM
+      <a class="btn btn-primary btn-sm" href="gstt-patient-medicines-new-medication.html">
+        New medication
       </a>  
     </div>
 
     <div class="card-text">
 
-      <div id="prom-chart"></div>
-      
-      <script>
-        var chart = c3.generate({
-            bindto: '#prom-chart',
-            data: {
-              columns: [
-                ['PROM scores', 4.3, 4.1, 5.3, 3.9, 4.1]
-              ]
-            },
-            axis: {
-              y: {
-                  max: 9,
-                  min: 1,
-                  // Range includes padding, set 0 if no padding needed
-                  // padding: {top:0, bottom:0}
-              }
-            },
-            size: {
-              height: 250
-            },
-            padding: {
-              top: 20,
-              right:20
-            }
-        });
-      </script>
-
       <table class="table table-bordered table-striped">
         <thead>
           <tr>
-            <th scope="col">Sent</th>
-            <th scope="col">Completed</th>
-            <th scope="col">Score</th>
+            <th scope="col">Medicine</th>
+            <th scope="col">Start</th>
+            <th scope="col">End</th>
+            <th scope="col">Route</th>
+            <th scope="col">Frequency</th>
+            <th scope="col">Dosage</th>
+            <th scope="col">Prescriber</th>
+            <th scope="col"></th>
           </tr>
         </thead>
       
         <tbody>
             <tr>
-              <td>11/12/2018</td>
-              <td>13/12/2018</td>
-              <td>4.3</td>
+              <td>Methotrexate</td>
+              <td>02/11/2017</td>
+              <td></td>
+              <td>Oral</td>
+              <td>OD</td>
+              <td>120mg</td>
+              <td>Hospital</td>
+              <td style="text-align: right"><a href="gstt-patient-medicines-change.html">Change </a></td>
             </tr>
             <tr>
-              <td>11/11/2018</td>
-              <td>18/11/2018</td>
-              <td>4.1</td>
+              <td>Hydroxycholorquine </td>
+              <td>01/12/16</td>
+              <td></td>
+              <td>IM</td>
+              <td>1 / month</td>
+              <td>100mg</td>
+              <td>GP</td>
+              <td style="text-align: right"><a href="gstt-patient-medicines-change.html">Change </a></td>
             </tr>
-            <tr>
-              <td>12/10/2018</td>
-              <td>14/10/2018</td>
-              <td>5.3</td>
-            </tr>
-            <tr>
-              <td>15/09/2018</td>
-              <td>17/09/2018</td>
-              <td>3.9</td>
-            </tr>
-            <tr>
-              <td>11/08/2018</td>
-              <td>01/09/2018</td>
-              <td>4.1</td>
+            <tr class=" text-secondary">
+              <td>Hydroxycholorquine</td>
+              <td>08/08/16</td>
+              <td>01/12/16</td>
+              <td>IM</td>
+              <td>1 / month</td>
+              <td>120mg</td>
+              <td>GP</td>
+              <td style="text-align: right"><a href="gstt-patient-medicines-change.html">Change </a></td>
             </tr>
         </tbody>
       </table>
