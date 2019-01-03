@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://gstt-remote-monitoring.herokuapp.com/patients/916249939 -->
+<html lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>GSTT Remote Monitoring</title><meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="0LWUw3DvoLIY14h7XOHYEdBvD3e9jvjA9U6BCSYTGtsZ4a879wfws3jbUSdE1E7CW5joBD2uitF1vnRyXFpANQ==">
+
+<link rel="stylesheet" media="all" href="./assets/css/main.css" data-turbolinks-track="reload">
+<link rel="stylesheet" media="all" href="./assets/c3js-0.6.11/c3.min.css" data-turbolinks-track="reload">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/c3js-0.6.11/d3-5.4.0.min.js"></script>
+<script src="assets/c3js-0.6.11/c3.min.js"></script>
+
+</head>
+
+
+
+
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+
+      <a class="navbar-brand" href="#">
+        GSTT Remote Monitoring
+      </a>
+    
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    
+    
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="gstt-patients.html">
+                Patients
+              </a></li>
+    
+          </ul>
+    
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" rel="nofollow" data-method="delete" href="#"><svg class="octicon octicon-sign-out" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9V7H8V5h4V3l4 3-4 3zm-2 3H6V3L2 1h8v3h1V1c0-.55-.45-1-1-1H1C.45 0 0 .45 0 1v11.38c0 .39.22.73.55.91L6 16.01V13h4c.55 0 1-.45 1-1V8h-1v4z"></path></svg></a>
+            </li>
+          </ul>
+    
+      </div>
+    </nav>
+
+
+    <main role="main" class="container-fluid">
+      <div class="starter-template">
+
+        
+
+        
+
+        
+<header class="clearfix">        
+<div class="float-left">
+  <h1 class="pb-2 mb-0">
+    Boris Divjak
+  </h1>
+  <p class="text-muted">
+  <span class="text-secondary">D.O.B.:</span>       23/05/1978    &nbsp;&nbsp;&nbsp; 
+  <span class="text-secondary">NHS no.:</span>      943 476 5919  &nbsp;&nbsp;&nbsp; 
+  <span class="text-secondary">Hospital no.:</span> 5779021Q
+  </p>
+</div>
+<a class="btn btn-primary btn-lg float-right mt-2" href="gstt-new-assessment-v2.html">Start consultation</a>
+</header>
+
+<div class="card">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+
+        <li class="nav-item">
+          <a class="nav-link" href="gstt-conditions.html">Conditions</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="gstt-medicines.html">Medicines</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="gstt-consultations.html">Consultations</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" href="gstt-proms.html">PROMs</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Messages</a>
+        </li>
+
+
+    </ul>
+  </div>
+
+  <div class="card-body">
+    <h2 class="h5 card-title float-left">PROMs</h2>
+    <div class="float-right clearfix">
+      <a class="btn btn-primary btn-sm" href="#">
+        New PROM
+      </a>  
+    </div>
+
+    <div class="card-text">
+
+      <div id="prom-chart"></div>
+      
+      <script>
+        var chart = c3.generate({
+            bindto: '#prom-chart',
+            data: {
+              columns: [
+                ['PROM scores', 4.3, 4.1, 5.3, 3.9, 4.1]
+              ]
+            },
+            axis: {
+              y: {
+                  max: 9,
+                  min: 1,
+                  // Range includes padding, set 0 if no padding needed
+                  // padding: {top:0, bottom:0}
+              }
+            },
+            size: {
+              height: 250
+            },
+            padding: {
+              top: 20,
+              right:20
+            }
+        });
+      </script>
+
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Sent</th>
+            <th scope="col">Completed</th>
+            <th scope="col">Score</th>
+          </tr>
+        </thead>
+      
+        <tbody>
+            <tr>
+              <td>11/12/2018</td>
+              <td>13/12/2018</td>
+              <td>4.3</td>
+            </tr>
+            <tr>
+              <td>11/11/2018</td>
+              <td>18/11/2018</td>
+              <td>4.1</td>
+            </tr>
+            <tr>
+              <td>12/10/2018</td>
+              <td>14/10/2018</td>
+              <td>5.3</td>
+            </tr>
+            <tr>
+              <td>15/09/2018</td>
+              <td>17/09/2018</td>
+              <td>3.9</td>
+            </tr>
+            <tr>
+              <td>11/08/2018</td>
+              <td>01/09/2018</td>
+              <td>4.1</td>
+            </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+      </div>
+    </main>
+  
+
+</body></html>

@@ -1,0 +1,5 @@
+These are HTML/CSS layouts for the Guy's and St Thomas' [Remote Monitoring app](gsttrm.net).
+
+They're just static layouts, currently hosted on GitHub Pages. See the layouts here: https://unboxed.github.io/gstt-ra-layouts/.
+
+I use [Harp](http://harpjs.com/) to preview and compile the layouts locally. Source files are in `_harp`. To compile do `harp compile _harp ./` from root project folder.
