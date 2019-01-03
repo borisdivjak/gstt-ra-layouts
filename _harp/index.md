@@ -4,21 +4,21 @@
 
 [02 - Add new patient (with error)](gstt-new-patient.html)
 
-[03 - Patient conditions](gstt-conditions.html)
+[03 - Patient conditions](gstt-patient-conditions.html)
 
-[04 - Patient medication](gstt-medicines.html)
+[04 - Patient medication](gstt-patient-medicines.html)
 
-[05 - Patient consultations](gstt-consultations.html)
+[05 - Patient consultations](gstt-patient-consultations.html)
 
-[06 - Patient PROMs](gstt-proms.html)
+[06 - Patient PROMs](gstt-patient-proms.html)
 
 [07 - New assessment form](gstt-new-assessment.html)
 
 
 # Patient PROM layouts (mobile)
 
-[01 - PROM question](gstt-prom-question.html)
+[01 - PROM question](prom/gstt-prom-question.html)
 
-[02 - PROM thanks](gstt-prom-thanks.html)
+[02 - PROM thanks](prom/gstt-prom-thanks.html)
 
-[03 - PROM chart](gstt-prom-chart.html)
+[03 - PROM chart](prom/gstt-prom-chart.html)
