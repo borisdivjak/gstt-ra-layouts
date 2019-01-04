@@ -58,7 +58,28 @@
         
 
         
-<%- partial("_patient-header") %>
+<header class="clearfix mb-2">        
+<div class="float-left">
+  <h1 class="pb-2 mb-0 d-inline-block">
+    Boris Divjak
+  </h1>
+
+  <div class="text-muted mb-1">
+    <div class="d-inline-block mr-2">
+      <span class="text-secondary">D.O.B.:</span> 23/05/1978
+    </div>
+    <div class="d-inline-block mr-2">
+      <span class="text-secondary">NHS no.:</span> 943 476 5919
+    </div>
+    <div class="d-inline-block mr-2">
+      <span class="text-secondary">Hospital no.:</span> 5779021Q
+    </div>
+    <div class="d-inline-block mr-2">
+      <small><a href="gstt-new-patient.html">Edit patient details</a></small>
+    </div>
+  </div>
+</div>
+</header>
         
 
 <div class="card">
@@ -70,11 +91,11 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="gstt-patient-medicines.html">Medicines</a>
+          <a class="nav-link" href="gstt-patient-medications.html">Medications</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active" href="gstt-patient-consultations.html">Consultations</a>
+          <a class="nav-link active" href="gstt-patient-assessments.html">Assessments</a>
         </li>
 
         <li class="nav-item">
@@ -90,7 +111,12 @@
   </div>
 
   <div class="card-body">
-    <h2 class="h5 card-title float-left pb-3">Consultations</h2>
+    <h2 class="h4 card-title float-left pt-1 pb-3">Assessments</h2>
+    <div class="float-right">
+      <a class="btn btn-primary btn-sm" href="#">
+        + New assessment
+      </a>  
+    </div>
 
     <div class="card-text">
 

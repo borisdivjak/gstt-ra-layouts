@@ -6,9 +6,9 @@
 
 [03 - Patient conditions](gstt-patient-conditions.html)
 
-[04 - Patient medication](gstt-patient-medicines.html)
+[04 - Patient medication](gstt-patient-medications.html)
 
-[05 - Patient consultations](gstt-patient-consultations.html)
+[05 - Patient assessments](gstt-patient-assessments.html)
 
 [06 - Patient PROMs](gstt-patient-proms.html)
 

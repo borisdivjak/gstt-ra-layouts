@@ -159,6 +159,8 @@ $enable-transitions: false;
   &:focus {
     box-shadow: 0 0 0 $input-btn-focus-width $nhsuk-focus-color;
   }
+  
+  margin-bottom: 3px;
 }
 
 .form-control {

@@ -60,38 +60,26 @@
         
 
         
-<header class="clearfix">        
-<div class="float-left">
-  <h1 class="pb-2 mb-0">
-    Boris Divjak
-  </h1>
-  <p class="text-muted">
-  <span class="text-secondary">D.O.B.:</span>       23/05/1978    &nbsp;&nbsp;&nbsp; 
-  <span class="text-secondary">NHS no.:</span>      943 476 5919  &nbsp;&nbsp;&nbsp; 
-  <span class="text-secondary">Hospital no.:</span> 5779021Q
-  </p>
-</div>
-<a class="btn btn-primary btn-lg float-right mt-2" href="gstt-new-assessment-v2.html">Start consultation</a>
-</header>
+<%- partial("_patient-header") %>
 
 <div class="card">
   <div class="card-header">
     <ul class="nav nav-tabs card-header-tabs">
 
         <li class="nav-item">
-          <a class="nav-link " href="gstt-conditions.html">Conditions</a>
+          <a class="nav-link " href="gstt-patient-conditions.html">Conditions</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active" href="gstt-medicines.html">Medicines</a>
+          <a class="nav-link active" href="gstt-patient-medications.html">Medications</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link " href="gstt-consultations.html">Consultations</a>
+          <a class="nav-link " href="gstt-patient-assessments.html">Assessments</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link " href="gstt-proms.html">PROMs</a>
+          <a class="nav-link " href="gstt-patient-proms.html">PROMs</a>
         </li>
 
         <li class="nav-item">
@@ -103,15 +91,22 @@
   </div>
 
   <div class="card-body">
-    <h2 class="h5 card-title pb-2">New medication</h2>
-
+    <h2 class="h4 card-title pt-1 pb-3">Change medication</h2>
+<!--
+    <p class="pb-3">
+      <span class="text-secondary">Started:</span> 01/12/16	&nbsp;&nbsp; 
+      <span class="text-secondary">Route:</span> IM &nbsp;&nbsp; 
+      <span class="text-secondary">Freq.:</span> 1/month &nbsp;&nbsp; 
+      <span class="text-secondary">Dose:</span> 100mg
+    </p>
+-->
     <div class="card-text">
 
       <hr />
       <form action="" accept-charset="UTF-8" method="post" class="col-xl-10"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="3RvjcYJzkTR6GO0NcTvBjL2tB0kfeaAFmPLA9mbgfN7RZng8i3sUylEEqyT1QIOuwGbHN1h7FNo+pwOicI2z8A==">
         
       
-      
+           
         <div class="form-group form-row pb-md-2">
           <label for="user_first_name" class="col-md-2 col-form-label">Start:</label>
           <div class="col-md-4"><input class="form-control" type="text" value="" name="user[first_name]" id="user_first_name"></div>
@@ -153,10 +148,24 @@
       
         <hr />
         
+        <div class="form-group form-row pb-md-2">
+          <label for="user_first_name" class="col-md-2 col-form-label">Date of change:</label>
+          <div class="col-md-4"><input class="form-control" type="text" value="" name="user[first_name]" id="user_first_name"></div>
+        </div>
+      
+        <div class="form-group form-row pb-md-2">
+          <label for="user_first_name" class="col-md-2 col-form-label">Reason for change:</label>
+          <div class="col-md-10"><input class="form-control" type="text" value="" name="user[first_name]" id="user_first_name"></div>
+        </div>
+      
+        <hr />
       
         <div class="form-group form-row">
 <!--          <div class="offset-md-2 col-md-10"><input type="submit" name="commit" value="Save medication" class="btn btn-success" data-disable-with="Save medication"></div> -->
-          <div class="offset-md-2 col-md-10"><a class="btn btn-success" href="gstt-medicines.html">Save medication</a></div>
+          <div class="offset-md-2 col-md-10">
+            <a class="btn btn-success" href="gstt-patient-medications.html">Save change</a>
+            <a class="btn btn-secondary text-white" href="gstt-patient-medications.html">End medication</a>
+          </div>
         </div>
 
       </form>
