@@ -93,7 +93,7 @@
   <div class="card-body">
     <h2 class="h4 card-title float-left pt-1 pb-3">Medications</h2>
     <div class="float-right">
-      <a class="btn btn-primary btn-sm" href="gstt-patient-medications-new-medication.html">
+      <a class="btn btn-primary btn-sm" href="gstt-patient-medications-change.html">
         + New medication
       </a>  
     </div>
@@ -101,64 +101,77 @@
     <div class="card-text">
 
       <table class="table table-bordered table-striped table-medications">
-        <thead>
-          <tr>
-            <th scope="col">Medication</th>
-            <th scope="col">Start</th>
-            <th scope="col">End</th>
-            <th scope="col">Frequency</th>
-            <th scope="col">Dosage</th>
-            <th scope="col">Prescriber</th>
-            <th scope="col" class="text-right"></th>
-          </tr>
-        </thead>
-      
         <tbody>
-            <tr class="medication-ongoing">
-              <td>Methotrexate (oral)</td>
-              <td>02/11/2017</td>
-              <td><span class="badge badge-success">Ongoing</span></td>
+            <tr class="medication-header">
+              <td class="h5">Methotrexate (Oral)</td>
+              <td>Frequency</td>
+              <td>Dosage</td>
+              <td>Prescriber</td>
+              <td>Reason for change</td>
+              <td class="py-2 text-right">      
+                <a class="btn btn-primary btn-sm" href="gstt-patient-medications-change.html">
+                  Change
+                </a>  
+              </td>
+            </tr>
+
+            <tr>
+              <td>02/11/2017 &nbsp;&ndash;&nbsp; <span class="badge badge-success">Ongoing</span></td>
               <td>OD</td>
               <td>120mg</td>
               <td>Hospital</td>
-              <td class="text-right"><a href="gstt-patient-medications-change.html" class="font-weight-bold">Change</a></td>
-            </tr>
-            <tr class="medication-past">
               <td></td>
-              <td>12/3/2017</td>
-              <td>02/11/2017</td>
+              <td class="text-right"><a href="gstt-patient-medications-change.html">Edit</a></td>
+            </tr>
+            <tr>
+              <td>12/3/2017 &nbsp;&ndash;&nbsp; 02/11/2017</td>
               <td class="text-secondary">&mdash; &#x3003; &mdash;</td>
               <td>100mg</td>
               <td class="text-secondary">&mdash; &#x3003; &mdash;</td>
-              <td class="text-right">Adverse allergic reaction</td>
+              <td class="text-secondary">Adverse allergic reaction</td>
+              <td class="text-right"><a href="gstt-patient-medications-change.html">Edit</a></td>
             </tr>
-            <tr class="medication-past">
-              <td></td>
-              <td>10/1/2016</td>
-              <td>12/3/2017</td>
+            <tr>
+              <td>10/1/2016 &nbsp;&ndash;&nbsp; 12/3/2017</td>
               <td class="text-secondary">&mdash; &#x3003; &mdash;</td>
               <td>80mg</td>
               <td class="text-secondary">&mdash; &#x3003; &mdash;</td>
-              <td class="text-right">Patient not responding to medication, dosage too low</td>
+              <td class="text-secondary">Patient not responding to medication, dosage too low.</td>
+              <td class="text-right"><a href="gstt-patient-medications-change.html">Edit</a></td>
             </tr>
-            
-            <tr class="medication-ongoing">
-              <td>Hydroxycholorquine (IM)</td>
-              <td>01/12/16</td>
-              <td><span class="badge badge-success">Ongoing</span></td>
+
+            <tr>
+              <td colspan="6" class="py-1">&nbsp;</td>
+            </tr>
+
+            <tr class="medication-header">
+              <td class="h5">Hydroxycholorquine (IM)</td>
+              <td>Frequency</td>
+              <td>Dosage</td>
+              <td>Prescriber</td>
+              <td>Reason for change</td>
+              <td class="py-2 text-right">      
+                <a class="btn btn-primary btn-sm" href="gstt-patient-medications-change.html">
+                  Change
+                </a>  
+              </td>
+            </tr>
+
+            <tr>
+              <td>02/11/2017 &nbsp;&ndash;&nbsp; <span class="badge badge-success">Ongoing</span></td>
               <td>1 / month</td>
-              <td>100mg</td>
-              <td>GP</td>
-              <td class="text-right"><a href="gstt-patient-medications-change.html" class="font-weight-bold">Change</a></td>
-            </tr>
-            <tr class="medication-past">
-              <td></td>
-              <td>08/08/16</td>
-              <td>01/12/16</td>
-              <td class="text-secondary">&mdash; &#x3003; &mdash;</td>
               <td>120mg</td>
+              <td>GP</td>
+              <td></td>
+              <td class="text-right"><a href="gstt-patient-medications-change.html">Edit</a></td>
+            </tr>
+            <tr>
+              <td>12/3/2017 &nbsp;&ndash;&nbsp; 02/11/2017</td>
               <td class="text-secondary">&mdash; &#x3003; &mdash;</td>
-              <td class="text-right">Adverse allergic reaction</td>
+              <td>100mg</td>
+              <td class="text-secondary">&mdash; &#x3003; &mdash;</td>
+              <td class="text-secondary">Adverse allergic reaction</td>
+              <td class="text-right"><a href="gstt-patient-medications-change.html">Edit</a></td>
             </tr>
         </tbody>
       </table>

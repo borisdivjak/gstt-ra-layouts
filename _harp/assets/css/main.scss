@@ -274,3 +274,41 @@ input[type=number], input[type=date] {
       margin-top: 42px;
   }
 }
+
+
+
+.table-medications {
+
+//  td { border: none; }
+
+  .medication-header td {
+    border-top: $table-border-width*2 solid $table-border-color;
+    background: $color_nhsuk-grey-5;
+    font-weight: bold;
+  }
+  
+  .medication-ongoing td {
+    border-top: $table-border-width*2 solid $table-border-color;
+    background: $color_nhsuk-grey-5;
+  }
+  
+  .medication-past td:first-child {
+    border: none;
+  }
+  .medication-past:last-child td:first-child {
+//    border-bottom: $table-border-width solid $table-border-color !important;
+  }
+
+
+  .medication-reason {
+    background: $color_nhsuk-grey-5;
+    
+    td { 
+      padding-top: 3px;
+      padding-bottom: 3px;
+      border-top: 0;
+      color: $color_nhsuk-grey-3;
+    }
+  }
+
+}
