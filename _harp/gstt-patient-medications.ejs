@@ -93,7 +93,7 @@
   <div class="card-body">
     <h2 class="h4 card-title float-left pt-1 pb-3">Changes in medication</h2>
     <div class="float-right">
-      <a class="btn btn-primary btn-sm" href="gstt-patient-medications-change-medication.html">
+      <a class="btn btn-primary btn-sm" href="gstt-patient-medications-change-step-1.html">
         + Change medication
       </a>  
     </div>
@@ -103,7 +103,9 @@
       <table class="table table-bordered table-striped table-medications">
         <thead>
           <tr>
+            <th scope="col">Date of change</th>
             <th scope="col">Medication</th>
+            <th scope="col">Route</th>
             <th scope="col">Frequency</th>
             <th scope="col">Dosage</th>
             <th scope="col">Prescriber</th>
@@ -112,63 +114,61 @@
         </thead>
       
         <tbody>
-            <tr class="medication-change">
-              <td><b>02/11/2017</b> – <b>now</b></td>
-              <td colspan=3><span class="text-muted">Reason for change:</span> <b>Patient not responding to medication, dosage too low</b></td>
-              <td class="text-right"><a href="gstt-patient-medications-change-medication.html">Edit</a></td>
-            </tr>
-            <tr>
-              <td>Methotrexate (oral)</td>
+            <tr class="medication-details">
+              <td>22/10/2018 – <span class="badge badge-success pt-1">current medication</span></td>
+              <td><b>Methotrexate</b></td>
+              <td>Oral</td>
               <td>OD</td>
               <td>100mg</td>
               <td>Hospital</td>
-              <td></td>
+              <td class="text-right"><a href="gstt-patient-medications-change.html">Edit</a></td>
             </tr>
-            <tr>
-              <td>Hydroxycholorquine (IM)</td>
-              <td>1 / month</td>
-              <td>80mg</td>
-              <td>GP</td>
-              <td></td>
+            <tr class="medication-reason">
+              <td colspan=6>Reason for change: Dose too low, patient was not responding to medication</td>
             </tr>
-            <tr>
-              <td colspan=5></td>
+            <tr class="medication-details">
+              <td>22/10/2018 – <span class="badge badge-warning pt-1">stopped medication</span></td>
+              <td colspan=5><b>Hydroxycholorquine</b> &nbsp; </td>
+              <td class="text-right"><a href="gstt-patient-medications-change.html">Edit</a></td>
             </tr>
-            
-            <tr class="medication-change">
-              <td><b>12/4/2017</b> – <b>02/11/2017</b></td>
-              <td colspan=3><span class="text-muted">Reason for change:</span> <b>Allergic reaction</b></td>
-              <td class="text-right"><a href="gstt-patient-medications-change-medication.html">Edit</a></td>
+            <tr class="medication-reason">
+              <td colspan=6>Reason for change: Adverse reaction to medication</td>
             </tr>
-            <tr>
-              <td>Methotrexate (oral)</td>
+            <tr class="medication-details">
+              <td>13/5/2018</td>
+              <td><b>Methotrexate</b></td>
+              <td>Oral</td>
               <td>OD</td>
               <td>120mg</td>
               <td>Hospital</td>
-              <td></td>
+              <td class="text-right"><a href="gstt-patient-medications-change.html">Edit</a></td>
             </tr>
-            <tr>
-              <td>Hydroxycholorquine (IM)</td>
+            <tr class="medication-reason">
+              <td colspan=6>Reason for change: Dose too low, patient was not responding to medication</td>
+            </tr>
+            <tr class="medication-details">
+              <td>30/1/2018</td>
+              <td><b>Hydroxycholorquine</b></td>
+              <td>IM</td>
               <td>1 / month</td>
               <td>60mg</td>
               <td>GP</td>
-              <td></td>
+              <td class="text-right"><a href="gstt-patient-medications-change.html">Edit</a></td>
             </tr>
-            <tr>
-              <td colspan=5></td>
+            <tr class="medication-reason">
+              <td colspan=6>Start of treatment</td>
             </tr>
-            
-            <tr class="medication-change">
-              <td><b>23/7/2016</b> – <b>12/4/2017</b></td>
-              <td colspan=3><span class="text-muted">Reason for change:</span> <b>Start of treatement</b></td>
-              <td class="text-right"><a href="gstt-patient-medications-change-medication.html">Edit</a></td>
-            </tr>
-            <tr>
-              <td>Methotrexate (oral)</td>
+            <tr class="medication-details">
+              <td>12/11/2017</td>
+              <td><b>Methotrexate</b></td>
+              <td>Oral</td>
               <td>OD</td>
               <td>140mg</td>
               <td>Hospital</td>
-              <td></td>
+              <td class="text-right"><a href="gstt-patient-medications-change.html">Edit</a></td>
+            </tr>
+            <tr class="medication-reason">
+              <td colspan=6>Start of treatment</td>
             </tr>
             
         </tbody>
