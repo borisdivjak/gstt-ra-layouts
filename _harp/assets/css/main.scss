@@ -292,11 +292,24 @@ input[type=number], input[type=date] {
     background: $color_nhsuk-grey-5;
   }
   
+  .medication-change td {
+    border-top: none;
+    background: rgba($color_nhsuk-grey-4, 0.6);
+  }
+  
   .medication-past td:first-child {
     border: none;
   }
   .medication-past:last-child td:first-child {
 //    border-bottom: $table-border-width solid $table-border-color !important;
+  }
+  
+  .border-bottom-0 td {
+    border-bottom: none;
+  }
+
+  .border-top-0 td {
+    border-top: none;
   }
 
 
