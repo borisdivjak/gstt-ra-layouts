@@ -45,7 +45,7 @@
 </nav>
 
 
-    <main role="main" class="container">
+    <main role="main" class="container-fluid">
       <div class="starter-template">
 
         
@@ -57,43 +57,83 @@
 </h1>
 <form action="" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="3RvjcYJzkTR6GO0NcTvBjL2tB0kfeaAFmPLA9mbgfN7RZng8i3sUylEEqyT1QIOuwGbHN1h7FNo+pwOicI2z8A==">
   
-  <div id="error_explanation">
+<!--
+    <div id="error_explanation">
       <div class="alert alert-danger alert-dismissible fade show" role="alert">
         <h3>3 errors prohibited this patient from being saved:</h3>
-    <ul>
-        <li>First name can't be blank</li>
-        <li>Last name can't be blank</li>
-        <li>Mobile number can't be blank</li>
-    </ul>
-
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">×</span>
-    </button>
-  </div>
-
-  </div>
-
+        <ul>
+            <li>First name can't be blank</li>
+            <li>Last name can't be blank</li>
+            <li>Mobile number can't be blank</li>
+        </ul>
+    
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+    </div>
+-->
 
   <!-- FIXME: -->
   <input type="hidden" value="patient" name="user[role]" id="user_role">
 
-  <div class="form-group">
-    <div class="field_with_errors"><label for="user_first_name">First name</label></div>
-    <div class="field_with_errors"><input class="form-control" type="text" value="" name="user[first_name]" id="user_first_name"></div>
+  <hr class="mb-md-4">
+  
+  <div class="form-group form-row pb-md-2">
+    <label class="col-md-2 col-form-label" for="user_first_name">First name:</label>
+    <div class="col-md-6"><input class="form-control" type="text" value=""></div>
   </div>
 
-  <div class="form-group">
-    <div class="field_with_errors"><label for="user_last_name">Last name</label></div>
-    <div class="field_with_errors"><input class="form-control" type="text" value="" name="user[last_name]" id="user_last_name"></div>
+  <div class="form-group form-row pb-2">
+    <label class="col-md-2 col-form-label" for="user_last_name">Last name:</label>
+    <div class="col-md-6"><input class="form-control" type="text" value=""></div>
   </div>
 
-  <div class="form-group">
-    <div class="field_with_errors"><label for="user_mobile_number">Mobile number</label></div>
-    <div class="field_with_errors"><input class="form-control" type="text" value="" name="user[mobile_number]" id="user_mobile_number"></div>
+  <div class="form-group form-row pb-2">
+    <label class="col-md-2 col-form-label" for="user_mobile_number">Date of birth:</label>
+    <div class="col-md-6"><input class="form-control" placeholder="DD/MM/YYYY" type="text" value=""></div>
   </div>
 
-  <div class="form-group">
-    <a class="btn btn-success" href="gstt-patient-conditions.html">Create Patient</a>
+  <div class="form-group form-row pb-2">
+    <label class="col-md-2 col-form-label" for="user_mobile_number">Hospital number:</label>
+    <div class="col-md-6"><input class="form-control" type="text" value=""></div>
+  </div>
+
+  <div class="form-group form-row pb-2">
+    <label class="col-md-2 col-form-label" for="user_mobile_number">NHS number:</label>
+    <div class="col-md-6"><input class="form-control" type="text" value=""></div>
+  </div>
+
+  <hr class="mb-md-4">
+  
+  <div class="form-group form-row pb-2">
+    <label class="col-md-2 col-form-label" for="user_mobile_number">Mobile number:</label>
+    <div class="col-md-6"><input class="form-control" type="text" value=""></div>
+  </div>
+
+  <div class="form-group form-row pb-2">
+    <div class="offset-md-2 col-md-10">
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="customCheck1">
+        <label class="custom-control-label pr-4" for="customCheck1">
+          Send monthly automated PROMs
+        </label>
+        <div class="d-inline-block text-secondary">
+          Next PROM scheduled for <b>12/02/2018</b>
+        </div>
+        
+      </div>
+    </div>
+<!--
+    <label class="col-md-2 col-form-label" for="user_mobile_number">Automated PROMs:</label>
+    <div class="col-md-6"><input class="form-control" type="text" value=""></div>
+-->
+  </div>
+
+  <hr class="mb-4">
+
+  <div class="form-group form-row">
+    <div class="offset-md-2 col-md"><a class="btn btn-success" href="gstt-patient-conditions.html">Create Patient</a></div>
   </div>
 </form>
 

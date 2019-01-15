@@ -17,8 +17,10 @@
 
 # Patient PROM layouts (mobile)
 
-[01 - PROM question](prom/gstt-prom-question.html)
+[01 - PROM welcome](prom/gstt-prom-welcome.html)
 
-[02 - PROM thanks](prom/gstt-prom-thanks.html)
+[02 - PROM question](prom/gstt-prom-question.html)
 
-[03 - PROM chart](prom/gstt-prom-chart.html)
+[03 - PROM thanks](prom/gstt-prom-thanks.html)
+
+[04 - PROM chart](prom/gstt-prom-chart.html)

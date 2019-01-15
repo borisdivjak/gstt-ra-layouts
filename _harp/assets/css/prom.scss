@@ -62,12 +62,20 @@
 
 
 .prom-html footer {
-  right: 150px !important;
+  height: auto !important;
+
+  &.prom-question {
+    right: 150px !important;
+  }
+  
+  img.gstt-nhs-logo {
+    height: 40px;
+  }
 }
 
 
-.prom-html > body > header {
-  height: 53px;
+.prom-html > body > header {  
+  text-align: center;
   
   .ra-header-title {
     float:left;
@@ -89,4 +97,17 @@
   font-size: 1rem;
   line-height: 1.3rem;
   width: 4rem;
+}
+
+
+.prom-question {
+  .question-counter {
+    color: #999;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+  }
+  
 }
