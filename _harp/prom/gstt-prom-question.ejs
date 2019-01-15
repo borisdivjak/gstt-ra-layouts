@@ -22,88 +22,76 @@
 
 
 <body>
-    <header role="header" class="p-2 pl-3 bg-nhs-blue text-light fixed-top">
-       <div class="ra-header-title">Rheumatology Remote Monitoring</div>
-        <div class="gstt-nhs-logo"><img src="assets/images/nhs-gstt-logo-white.svg"></div>
 
-    </header>
-    <main role="main" class="container">
+<main role="main" class="container-fluid">
       
-<div class="progress prom-progress my-3">
-  <div class="progress-bar" role="progressbar" style="width: 0.0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="8">
-  </div>
-</div>
+  
+  <form class="" action="" accept-charset="UTF-8" method="post">
+    <input name="utf8" type="hidden" value="✓">
+    <input type="hidden" name="_method" value="patch">
+    <input type="hidden" name="authenticity_token" value="oJQXqk0thciFlmXKBYgWp4nfzd1M3H0lfBtkFS28FTVdAV77YF+UOTv/x/ilbk46llwUT8CtzhTn7vETC/KGLg==">
+    <input type="hidden" value="0" name="prom_wizard[i_cur_question]" id="prom_wizard_i_cur_question">
+  
+    <div class="row">
+      <div class="prom-question col">
+        <p>Question 1 of 7</p>
+        <h2 class="h4">Pain</h2>
+        <p>Select the number that best describes the pain you felt due to your rheumatoid arthritis during the last week</p>
+      </div>
 
-<form action="" accept-charset="UTF-8" method="post">
-  <input name="utf8" type="hidden" value="✓">
-  <input type="hidden" name="_method" value="patch">
-  <input type="hidden" name="authenticity_token" value="oJQXqk0thciFlmXKBYgWp4nfzd1M3H0lfBtkFS28FTVdAV77YF+UOTv/x/ilbk46llwUT8CtzhTn7vETC/KGLg==">
 
-
-  <input type="hidden" value="0" name="prom_wizard[i_cur_question]" id="prom_wizard_i_cur_question">
-
-    <div class="prom-scale float-right">
-
-      <ul>
-          <li>
-            <button name="prom_wizard[prom_attributes][q_pain]" type="submit" value="0" class="btn btn-sm btn-block ">0</button>
-          </li>
-          <li>
-            <button name="prom_wizard[prom_attributes][q_pain]" type="submit" value="1" class="btn btn-sm btn-block ">1</button>
-          </li>
-          <li>
-            <button name="prom_wizard[prom_attributes][q_pain]" type="submit" value="2" class="btn btn-sm btn-block ">2</button>
-          </li>
-          <li>
-            <button name="prom_wizard[prom_attributes][q_pain]" type="submit" value="3" class="btn btn-sm btn-block ">3</button>
-          </li>
-          <li>
-            <button name="prom_wizard[prom_attributes][q_pain]" type="submit" value="4" class="btn btn-sm btn-block active">4</button>
-          </li>
-          <li>
-            <button name="prom_wizard[prom_attributes][q_pain]" type="submit" value="5" class="btn btn-sm btn-block ">5</button>
-          </li>
-          <li>
-            <button name="prom_wizard[prom_attributes][q_pain]" type="submit" value="6" class="btn btn-sm btn-block ">6</button>
-          </li>
-          <li>
-            <button name="prom_wizard[prom_attributes][q_pain]" type="submit" value="7" class="btn btn-sm btn-block ">7</button>
-          </li>
-          <li>
-            <button name="prom_wizard[prom_attributes][q_pain]" type="submit" value="8" class="btn btn-sm btn-block ">8</button>
-          </li>
-          <li>
-            <button name="prom_wizard[prom_attributes][q_pain]" type="submit" value="9" class="btn btn-sm btn-block ">9</button>
-          </li>
-          <li>
-            <button name="prom_wizard[prom_attributes][q_pain]" type="submit" value="10" class="btn btn-sm btn-block ">10</button>
-          </li>
-      </ul>
-
-      <p class="prom-scale-hint-good">
-        no pain
-      </p>
-
-      <p class="prom-scale-hint-bad">
-        extreme pain
-      </p>
+      <div class="prom-scale col-5 col-sm-3 col-md-2">
+  
+        <ul>
+            <li>
+              <button name="prom_wizard[prom_attributes][q_pain]" type="submit" value="0" class="btn btn-sm btn-block ">0</button>
+            </li>
+            <li>
+              <button name="prom_wizard[prom_attributes][q_pain]" type="submit" value="1" class="btn btn-sm btn-block ">1</button>
+            </li>
+            <li>
+              <button name="prom_wizard[prom_attributes][q_pain]" type="submit" value="2" class="btn btn-sm btn-block ">2</button>
+            </li>
+            <li>
+              <button name="prom_wizard[prom_attributes][q_pain]" type="submit" value="3" class="btn btn-sm btn-block ">3</button>
+            </li>
+            <li>
+              <button name="prom_wizard[prom_attributes][q_pain]" type="submit" value="4" class="btn btn-sm btn-block active">4</button>
+            </li>
+            <li>
+              <button name="prom_wizard[prom_attributes][q_pain]" type="submit" value="5" class="btn btn-sm btn-block ">5</button>
+            </li>
+            <li>
+              <button name="prom_wizard[prom_attributes][q_pain]" type="submit" value="6" class="btn btn-sm btn-block ">6</button>
+            </li>
+            <li>
+              <button name="prom_wizard[prom_attributes][q_pain]" type="submit" value="7" class="btn btn-sm btn-block ">7</button>
+            </li>
+            <li>
+              <button name="prom_wizard[prom_attributes][q_pain]" type="submit" value="8" class="btn btn-sm btn-block ">8</button>
+            </li>
+            <li>
+              <button name="prom_wizard[prom_attributes][q_pain]" type="submit" value="9" class="btn btn-sm btn-block ">9</button>
+            </li>
+            <li>
+              <button name="prom_wizard[prom_attributes][q_pain]" type="submit" value="10" class="btn btn-sm btn-block ">10</button>
+            </li>
+        </ul>
+  
+        <p class="prom-scale-hint-good">
+          no pain
+        </p>
+  
+        <p class="prom-scale-hint-bad">
+          extreme pain
+        </p>
+      </div>
     </div>
-
-    <p>
-  Select the number that best describes the
-</p>
-<p class="blockquote">
-  <strong>
-    pain
-  </strong>
-</p>
-<p>
-  you felt due to your rheumatoid arthritis during the last week
-</p>
-
-
-</form>
+    
+  </form>
+    
 </main>
+
 <footer role="footer" class="d-flex p-2 bg-transparent fixed-bottom">
   <div class="flex-fill align-self-center">
     <a class="btn btn-link" href="">
