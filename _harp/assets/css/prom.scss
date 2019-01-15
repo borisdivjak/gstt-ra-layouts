@@ -4,10 +4,14 @@
 
 
 .prom-scale {
-  ul {
-    padding-left: 1rem;
-    width: 4rem;
+  float:none;
+  padding-right: 4.4rem;
 
+  ul {
+    width: 4rem;
+    float: right;
+//    margin-right: 3rem;
+    
     li {
       @include clearfix;
       margin: 0;
@@ -15,9 +19,8 @@
   }
 
   button {
-    width: 2.6rem;
+    width: 2.9rem;
     float: right;
-    height: 2.6rem;
     transition: width .5s, background .5s, color .5s;
     -webkit-touch-callout: none;
     -webkit-user-select: none;    
@@ -44,9 +47,10 @@
       transition: all 0s;
     }
     
-    @media screen and (max-height: 550px) { height: 2.25rem; }
-    @media screen and (max-height: 500px) { height: 2rem; }
-    @media screen and (max-height: 450px) { height: 1.75rem; }
+    height: 2.9rem;
+    @media screen and (max-height: 550px) { height: 2.6rem; }
+    @media screen and (max-height: 500px) { height: 2.35rem; }
+    @media screen and (max-height: 450px) { height: 2.0rem; }
   }
 }
 
@@ -81,3 +85,8 @@
   }
 }
 
+.prom-scale-hint-good, .prom-scale-hint-bad {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  width: 4rem;
+}
