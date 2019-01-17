@@ -274,61 +274,7 @@ input[type=number], input[type=date] {
 }
 
 
-
-.table-medications {
-
-//  td { border: none; }
-
-  .medication-details td {
-    border-bottom: none;
-    padding-bottom: 0;
-  }
-  
-  .medication-reason {
-    border-top: none;
-//    background: $color_nhsuk-grey-5;
-    
-    td { 
-      padding-top: 0;
-//      padding-bottom: 3px;
-      border-top: 0;
-      color: rgba($color_nhsuk-grey-2, 0.6);
-    }
-  }
-  
-  
-
-  .medication-header td {
-    border-top: $table-border-width*2 solid $table-border-color;
-    background: $color_nhsuk-grey-5;
-    font-weight: bold;
-  }
-  
-  .medication-ongoing td {
-    border-top: $table-border-width*2 solid $table-border-color;
-    background: $color_nhsuk-grey-5;
-  }
-  
-  .medication-change td {
-    border-top: none;
-    background: rgba($color_nhsuk-grey-4, 0.6);
-  }
-  
-  .medication-past td:first-child {
-    border: none;
-  }
-  .medication-past:last-child td:first-child {
-//    border-bottom: $table-border-width solid $table-border-color !important;
-  }
-  
-  .border-bottom-0 td {
-    border-bottom: none;
-  }
-
-  .border-top-0 td {
-    border-top: none;
-  }
-
-
-
+.badge {
+  padding-top: .35rem;
 }
+
