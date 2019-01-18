@@ -93,12 +93,12 @@
   </div>
 
   <div class="card-body">
-    <h2 class="h4 card-title float-left pt-1 pb-3">Medications</h2>
-    <div class="float-right">
-      <a class="btn btn-primary btn-sm" href="gstt-patient-medications-change.html">
-        + New medication
-      </a>  
-    </div>
+    <%- partial("_patient-tab-header", { 
+        title:      "Medications", 
+        new_button: "+ New medication", 
+        new_link:   "gstt-patient-medications-change.html" 
+    }) %>
+
 
     <div class="card-text">
 

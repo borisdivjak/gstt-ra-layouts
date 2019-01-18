@@ -96,12 +96,12 @@
   </div>
 
   <div class="card-body">
-    <h2 class="h4 card-title float-left pt-1 pb-3">PROMs</h2>
-    <div class="float-right">
-      <a class="btn btn-primary btn-sm" href="#">
-        + New PROM
-      </a>  
-    </div>
+    <%- partial("_patient-tab-header", { 
+        title:      "PROMs", 
+        new_button: "+ New PROM", 
+        new_link:   "#" 
+    }) %>
+
 
     <div class="card-text">
 

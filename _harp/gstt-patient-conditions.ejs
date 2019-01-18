@@ -90,12 +90,12 @@
   </div>
 
   <div class="card-body">
-    <h2 class="h4 card-title float-left pt-1 pb-3">Conditions</h2>
-    <div class="float-right">
-      <a class="btn btn-primary btn-sm " href="#">
-        + New condition
-      </a>  
-    </div>
+    <%- partial("_patient-tab-header", { 
+        title:      "Conditions", 
+        new_button: "+ New condition", 
+        new_link:   "#" 
+    }) %>
+
 
     <div class="card-text">
 
