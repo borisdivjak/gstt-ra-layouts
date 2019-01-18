@@ -63,28 +63,7 @@
         
 
         
-<header class="clearfix mb-2">        
-<div class="float-left">
-  <h1 class="pb-2 mb-0 d-inline-block">
-    Boris Divjak
-  </h1>
-
-  <div class="text-muted mb-1">
-    <div class="d-inline-block mr-2">
-      <span class="text-secondary">D.O.B.:</span> 23/05/1978
-    </div>
-    <div class="d-inline-block mr-2">
-      <span class="text-secondary">NHS no.:</span> 943 476 5919
-    </div>
-    <div class="d-inline-block mr-2">
-      <span class="text-secondary">Hospital no.:</span> 5779021Q
-    </div>
-    <div class="d-inline-block mr-2">
-      <small><a href="gstt-new-patient.html">Edit patient details</a></small>
-    </div>
-  </div>
-</div>
-</header>
+<%- partial("_patient-header") %>
 
 <div class="card">
   <div class="card-header">
@@ -127,12 +106,17 @@
             
         <div class="form-group form-row pb-md-2">
               <label for="user_first_name" class="col-md-2 col-form-label">Medication:</label>
-              <div class="col-md-6"><input class="form-control" type="text" value="Methotrexate (oral)" ></div>
+              <div class="col-md-6"><input class="form-control" type="text" value="" ></div>
         </div>
       
         <div class="form-group form-row pb-md-2">
-              <label for="user_first_name" class="col-md-2 col-form-label">Reason for stopping:</label>
-              <div class="col-md-8"><input class="form-control" type="text" value="" ></div>
+              <label for="user_first_name" class="col-md-2 col-form-label">New frequency:</label>
+              <div class="col-md-3"><input class="form-control" type="text" value="" ></div>
+        </div>
+      
+        <div class="form-group form-row pb-md-2">
+              <label for="user_first_name" class="col-md-2 col-form-label">New dosage:</label>
+              <div class="col-md-3"><input class="form-control" type="text" value="" ></div>
         </div>
       
 
@@ -140,12 +124,9 @@
       
         <div class="form-group form-row">
           <div class="offset-md-2 col-md-7">
-            <a class="btn btn-warning" href="gstt-patient-medications.html">Confirm stop medication</a>
+            <a class="btn btn-primary" href="gstt-patient-medications.html">Save change</a>
             <span class="pl-3 pr-2">or</span>
             <a class="" href="gstt-patient-medications.html">Cancel</a>
-          </div>
-          <div class="col-md-3 text-md-right pt-4 py-md-2">
-            <a class="text-secondary" href="gstt-patient-medications.html">Delete medication</a>
           </div>
         </div>
 
