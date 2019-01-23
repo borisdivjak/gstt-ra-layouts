@@ -114,10 +114,10 @@
   </div>
 
   <div class="card-body">
-    <h2 class="h4 card-title  pt-1 pb-3 pr-4">Medications</h2> 
-<a class="btn btn-primary btn-sm mb-4" href="gstt-patient-medications-new.html">
+    <a class="btn btn-primary btn-sm mb-4" href="gstt-patient-medications-new.html">
   + New medication
 </a>  
+<h2 class="h4 card-title  pt-3 pr-4">Current medications</h2> 
 
 
 
@@ -126,11 +126,11 @@
       <table class="table table-bordered table-striped table-medications">
         <thead>
           <tr>
-            <th scope="col">Medication</th>
-            <th scope="col">Date of last change</th>
+            <th scope="col" width="30%" class="">Medication</th>
+            <th scope="col" width="20%">Start date</th>
             <th scope="col">Frequency</th>
             <th scope="col">Dosage</th>
-            <th scope="col"></th>
+            <th scope="col" width="10%"></th>
           </tr>
         </thead>
         <tbody>
@@ -140,26 +140,9 @@
               <td>OD</td>
               <td>180mg</td>
               <td class="text-right">
-                <a href="" data-medication="Methotrexate (Oral)" class="btn-history show-history">Show history</a>  
-                <a href="" data-medication="Methotrexate (Oral)" class="btn-history hide-history d-none">Hide history</a>  
                 <a href="gstt-patient-medications-change.html" class="ml-3">Change</a>
               </td>
             </tr>
-            <tr data-medication="Methotrexate (Oral)" class="bg-light medication-history d-none">
-              <td><div class="slide-down"><span class="text-secondary">&mdash; &#x3003; &mdash;</span></div></td>
-              <td><div class="slide-down">23/09/2018</div></td>
-              <td><div class="slide-down"><span class="text-secondary">&mdash; &#x3003; &mdash;</span></div></td>
-              <td><div class="slide-down">160mg</div></td>
-              <td><div class="slide-down text-right"><a class="text-secondary" href="gstt-patient-medications.html">&#10005;</a></div></td>
-            </tr>
-            <tr data-medication="Methotrexate (Oral)" class="bg-light medication-history d-none">
-              <td><div class="slide-down"><span class="text-secondary">&mdash; &#x3003; &mdash;</span></div></td>
-              <td><div class="slide-down">21/06/2018</div></td>
-              <td><div class="slide-down"><span class="text-secondary">&mdash; &#x3003; &mdash;</span></div></td>
-              <td><div class="slide-down">140mg</div></td>
-              <td><div class="slide-down text-right"><a class="text-secondary" href="gstt-patient-medications.html">&#10005;</a></div></td>
-            </tr>
-
 
             <tr>
               <td>Hydroxycholorquine (IM)</td>
@@ -167,50 +150,32 @@
               <td>1 / week</td>
               <td>120mg</td>
               <td class="text-right">
-                <a href="" data-medication="Hydroxycholorquine (IM)" class="btn-history show-history">Show history</a>  
-                <a href="" data-medication="Hydroxycholorquine (IM)" class="btn-history hide-history d-none">Hide history</a>  
                 <a href="gstt-patient-medications-change.html" class="ml-3">Change</a>
               </td>
             </tr>
-            <tr data-medication="Hydroxycholorquine (IM)" class="bg-light medication-history d-none">
-              <td><div class="slide-down"><span class="text-secondary">&mdash; &#x3003; &mdash;</span></div></td>
-              <td><div class="slide-down">23/09/2018</div></td>
-              <td><div class="slide-down"><span class="text-secondary">&mdash; &#x3003; &mdash;</span></div></td>
-              <td><div class="slide-down">160mg</div></td>
-              <td><div class="slide-down text-right"><a class="text-secondary" href="gstt-patient-medications.html">&#10005;</a></div></td>
-            </tr>
-            <tr data-medication="Hydroxycholorquine (IM)" class="bg-light medication-history d-none">
-              <td><div class="slide-down"><span class="text-secondary">&mdash; &#x3003; &mdash;</span></div></td>
-              <td><div class="slide-down">21/06/2018</div></td>
-              <td><div class="slide-down"><span class="text-secondary">&mdash; &#x3003; &mdash;</span></div></td>
-              <td><div class="slide-down">140mg</div></td>
-              <td><div class="slide-down text-right"><a class="text-secondary" href="gstt-patient-medications.html">&#10005;</a></div></td>
-            </tr>
 
+        </tbody>
+      </table>
+      <br />
 
-            <tr>
+      <h2 class="h4 pb-2">Past medications</h2>
+      <table class="table table-bordered table-striped table-medications">
+        <thead>
+          <tr class=" ">
+            <th scope="col" width="30%">Medication</th>
+            <th scope="col">Start &minus; stop date</th>
+            <th scope="col">Reson for stopping</th>
+            <th scope="col" width="10%"></th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr  class="  ">
               <td>Methotrexate (SUBQ)</td>
-              <td>01/05/2017</td>
-              <td colspan="2"><span class="badge badge-warning mr-1">Discontinued</span> Patient had allergic reaction</td>
+              <td>01/05/2017  &minus; 05/05/2018</td>
+              <td >Patient had allergic reaction</td>
               <td class="text-right">
-                <a href="" data-medication="Methotrexate (SUBQ)" class="btn-history show-history">Show history</a>  
-                <a href="" data-medication="Methotrexate (SUBQ)" class="btn-history hide-history d-none">Hide history</a>  
                 <a href="gstt-patient-medications-change.html" class="ml-3">Change</a>
               </td>
-            </tr>
-            <tr data-medication="Methotrexate (SUBQ)" class="bg-light medication-history d-none">
-              <td><div class="slide-down"><span class="text-secondary">&mdash; &#x3003; &mdash;</span></div></td>
-              <td><div class="slide-down">23/09/2016</div></td>
-              <td><div class="slide-down">OD</div></td>
-              <td><div class="slide-down">160mg</div></td>
-              <td><div class="slide-down text-right"><a class="text-secondary" href="gstt-patient-medications.html">&#10005;</a></div></td>
-            </tr>
-            <tr data-medication="Methotrexate (SUBQ)" class="bg-light medication-history d-none">
-              <td><div class="slide-down"><span class="text-secondary">&mdash; &#x3003; &mdash;</span></div></td>
-              <td><div class="slide-down">21/06/2016</div></td>
-              <td><div class="slide-down"><span class="text-secondary">&mdash; &#x3003; &mdash;</span></div></td>
-              <td><div class="slide-down">140mg</div></td>
-              <td><div class="slide-down text-right"><a class="text-secondary" href="gstt-patient-medications.html">&#10005;</a></div></td>
             </tr>
 
 
